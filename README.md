@@ -8,18 +8,18 @@
 <br/>
 
 # Overview
-![Startup overview](./assets/overview.svg)
+![Startup overview](profile/assets/overview.svg)
 
 The workspace allows developer start up a project easly by creating an issue within your requirements.
 
 # Usage
 
 - When you come up with an idea then want to implement a software for that idea. Let's start by creating a new repository in our workspace.
-![Create repository](./assets/create_repository.png)
+![Create repository](profile/assets/create_repository.png)
 
 - From homepage of new repository, switch to Action tab to manually setup action through `set up a workflow yourself →`
 
-![Setup action](./assets/create_action_script.png)
+![Setup action](profile/assets/create_action_script.png)
 
 - This is a first version of action script.
 
@@ -68,11 +68,11 @@ jobs:
 
 - Commit the file as initial commit. For further actions, you have to update this file as a new commit.
 
-![Setup action](./assets/commit_action.png)
+![Setup action](profile/assets/commit_action.png)
 
   - There are some sensitive information in the action script such as API key. It can be hidden by setting `API_KEY` secret variable in `Settings -> Secretes and variables -> Actions New repository secret`
 
-    ![Assign secret variable](./assets/assign_secret_variable.png)
+    ![Assign secret variable](profile/assets/assign_secret_variable.png)
 
   - Then replace the api key in the action script by:
   
@@ -82,15 +82,15 @@ jobs:
 
 - Next step is tell the action about your idea by creating a new issue.
 
-![Create issue](./assets/create_issue.png)
+![Create issue](profile/assets/create_issue.png)
 
 - Then you can switch to Action tab to monitor the development process.
 
-![Action running](./assets/monitor_action_running.png)
+![Action running](profile/assets/monitor_action_running.png)
 
 - When the action running finish, there initial software is already in branch `initial`.
 
-![Checkout source code](./assets/checkout_source_code.png)
+![Checkout source code](profile/assets/checkout_source_code.png)
 
 
 # TODO
