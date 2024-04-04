@@ -31,6 +31,7 @@ on:
       - opened
       - labeled
       - reopened
+      - edited
 
 jobs:
   run:
