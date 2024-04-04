@@ -10,18 +10,18 @@
 # Overview
 ![Startup overview](profile/assets/overview.svg)
 
-The workspace allows developer start up a project easly by creating an issue within your requirements.
+The workspace allows developers to start up a project easily by creating an issue within your requirements.
 
 # Usage
 
 - When you come up with an idea then want to implement a software for that idea. Let's start by creating a new repository in our workspace.
 ![Create repository](profile/assets/create_repository.png)
 
-- From homepage of new repository, switch to Action tab to manually setup action through `set up a workflow yourself →`
+- From the homepage of the new repository, switch to Action tab to manually set action through `set up a workflow yourself →`
 
 ![Setup action](profile/assets/create_action_script.png)
 
-- This is a first version of action script.
+- This is the first version of action script.
 
 ```yaml
 name: Auto Initialization
@@ -67,11 +67,11 @@ jobs:
           timeout: 600000
 ```
 
-- Commit the file as initial commit. For further actions, you have to update this file as a new commit.
+- Commit the file as an initial commit. For further actions, you have to update this file as a new commit.
 
 ![Setup action](profile/assets/commit_action.png)
 
-  - There are some sensitive information in the action script such as API key. It can be hidden by setting `API_KEY` secret variable in `Settings -> Secretes and variables -> Actions New repository secret`
+  - There is some sensitive information in the action script such as API key. It can be hidden by setting `API_KEY` secret variable in `Settings -> Secretes and variables -> Actions New repository secret`
 
     ![Assign secret variable](profile/assets/assign_secret_variable.png)
 
@@ -81,7 +81,7 @@ jobs:
             customHeaders: '{"Content-Type": "application/json", "KEY": &{{ secret.API_KEY }}}'
     ```
 
-- Next step is tell the action about your idea by creating a new issue.
+- Next step is to tell the action about your idea by creating a new issue.
 
 ![Create issue](profile/assets/create_issue.png)
 
@@ -89,7 +89,7 @@ jobs:
 
 ![Action running](profile/assets/monitor_action_running.png)
 
-- When the action running finish, there initial software is already in branch `initial`.
+- When the action running finishes, the initial software is already in branch `initial`.
 
 ![Checkout source code](profile/assets/checkout_source_code.png)
 
